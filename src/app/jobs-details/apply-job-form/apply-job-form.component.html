@@ -1,0 +1,42 @@
+
+
+  
+
+
+<h2 mat-dialog-title>Form Popup</h2>
+<mat-dialog-content>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    
+<div>
+    <mat-form-field>
+        <input matInput placeholder="Name" formControlName="name" required>
+      </mat-form-field>
+</div>
+      
+ 
+<div>
+
+    <mat-form-field>
+        <input matInput type="email" placeholder="Email" formControlName="email" required>
+      </mat-form-field>
+</div>
+
+
+<div>
+    <input type="file" (change)="onFileSelected($event)">
+</div>
+    
+
+   
+   
+    
+    <div mat-dialog-actions>
+      <button mat-button (click)="onCancel()">Cancel</button>
+      <button mat-raised-button color="primary" type="submit" >Submit</button>
+    </div>
+  </form>
+</mat-dialog-content>
+
+
+  
+ 

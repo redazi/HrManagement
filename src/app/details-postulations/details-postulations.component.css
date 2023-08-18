@@ -1,0 +1,12 @@
+.disabled-timeline-block {
+  opacity: 0.6; /* Reduced opacity to simulate disabled state */
+  pointer-events: none; /* Disable pointer events to make it non-interactive */
+  /* Add any other styling you want to give it a disabled look */
+}
+
+/* Optionally, you can style the timeline content inside the disabled block as well */
+.disabled-timeline-block .timeline-content {
+  /* Add your custom styling for the content inside the disabled block */
+  /* For example, you can change the text color or background color */
+  color: #888;
+}
